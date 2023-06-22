@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Creative Web Mall India Pvt Ltd | Web</title>
+
+<style>
+
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation{
+
+        background-image : linear-gradient(to right, #533DB8, #03A7C0);
+        padding: 10px;
+        padding-left: 30px;
+        width: 100%;
+        display: inline;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+    }
+
+    .navigation a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-family: sans-serif;
+        
+    }
+
+    .navigation ul{
+
+        float: right;
+        padding-right: 20%;
+
+    }
+
+    .navigation li{
+
+        list-style-type: none;
+        display: inline;
+
+    }
+
+    .navigation li:hover{
+
+        background-color: black;
+        color: white;
+        padding: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-width: 0px 0px 3px 0px;
+        border-style: solid;
+        border-color: #03A7C0;
+
+    }
+
+    @media screen and (max-width: 824px) { .navigation ul{ display: none; } }
+
+    .scroll-nav{
+
+        height: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: solid;
+        border-width: 1px;
+        padding: 2px;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 2px 2px black;
+
+    }
+
+    .intro{
+        padding-top: 70px;
+    }
+
+    .about-us{
+        width: 100%;
+    }
+
+
+    .abt-item{
+        position: relative;
+        display: inline-block;
+        padding: 30px;
+        width: 15%;
+        top: 0;
+        transition: top ease 0.3s
+    }
+
+    .abt-item:hover{
+        top: -20px;
+    }
+
+
+    .abt-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 824px) { .abt-item{ width: 35%; } }
+
+
+    .btn{
+        background-color: transparent;
+        border-style: solid;
+        border-color: skyblue;
+        border-width: 2px;
+        border-radius: 3px;
+        font-size: medium;
+        padding: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btn:hover{
+        background-color: black;
+        color: white;
+        border-color: black;
+    }
+
+    .bg-scroll-image{
+        background-image: url(bgimage.jpg);
+        min-height: 575px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .border{
+        display: inline-block;
+        height: 150px;
+        width: 150px;
+        margin:15px ;
+        border-style: solid;
+        border-color: white;
+        border-width: 3px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.2);
+        
+        
+    }
+
+    .border:hover{
+        background-color: #f54f36;
+        border-color: skyblue;
+    }
+
+    .border h4{
+        color: white;
+        font-family: sans-serif;
+    }
+
+
+    
+    .services{
+        width: 100%;
+    }
+
+
+    .services-item{
+        
+        display: inline-block;
+        padding: 2px;
+        margin:10px;
+        width: 31%;
+        cursor: pointer;
+
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: linear;
+        box-shadow:0px 0 0 black inset;
+
+    }
+
+    .services-item:hover{
+        -webkit-box-shadow: 550px 0 0 black inset;
+        color: white;
+    }
+
+
+    .services-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services-item h3{
+        font-family: sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 824px) { .services-item{ width: 80%; } }
+
+
+    .careers{
+        width: 100%;
+    }
+
+    .contact{
+        background-color: black;
+        color: white;
+        padding: 10px;
+    }
+
+    .contact-container{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .contact section{
+        margin: 15px;
+        display: inline-block;
+    }
+
+    .contact h4{
+        margin-left: 15px;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: lighter;
+        cursor: pointer;
+
+    }
+
+    .contact li{
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .contact button{
+        margin-left: 15px;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: transparent;
+        border-style: solid;
+        border-color: white;
+        border-radius: 5px;
+        color: white;
+        font-size: medium;
+    }
+
+    .contact button:hover{
+        background-color: white;
+        color: black;
+        border-color: white;
+    }
+
+    #section1 ,#section2{
+        width: 25%;
+    }
+
+    #section3{
+        width: 20%;
+    }
+
+    #section4{
+        width: 15%;
+    }
+
+
+    @media screen and (max-width: 824px) { #section1, #section2, #section3, #section4{ width: 80%; } } 
+    
+    
+
+</style>
+
+</head>
+
+<div class="navigation">
+    <nav>
+        <img src="https://ik.imagekit.io/thjko7wmg4v/app/wp-content/uploads/2021/10/cropped-Creative-logo-White-small-1.avif" height="45px">
+
+        <ul>
+            <li><a href="#about-us"> About Us </a> </li>   
+            <li><a href="#services" style="margin-left: 15px;"> Services </a></li>
+            <li><a href=""> Solutions </a></li>
+            <li><a href=""> Portfolio </a></li>
+            <li><a href="#careers"> Careers </a></li>
+            <li><a href="#contact"> Contact </a></li>
+            <li><a href=""> Blog </a></li>
+        </ul>
+            
+        
+        
+    </nav>
+
+</div>
+
+
+<div class="intro" id="intro">
+
+    <iframe width="100%" height="575px" src="https://www.youtube.com/embed/OsMB_yV4xxg?controls=0&autoplay=1&mute=1" title="Vacancy in IT company Mumbai - Creative Web Mall" frameborder="0" allow="accelerometer; controls autoplay; clipboard-write; encrypted-media; gyroscope; web-share" allowfullscreen></iframe>
+    <a href="#about-us"><img src="down_icon.png" class="scroll-nav"></a>
+
+</div>
+
+
+<div class="about-us" id="about-us">
+
+        <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Creative individuals for mobile and web applications<br></h1>
+        <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">The team which looks-after your goal to make you shine.</h3> 
+
+
+        <div class="abt-item-container">
+
+            <center>
+
+            <div class="abt-item">
+                <img src="cake.png" height="160px">
+                <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Since 2003<br></h1>
+                <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Young at heart, but full of tradition</h3>
+            </div>
+
+            <div class="abt-item">
+                <img src="ratings.png" height="160px">
+                <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">5000+<br></h1>
+                <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Satisfied clients and growing</h3>
+            </div>
+
+            <div class="abt-item">
+                <img src="globe.png" height="160px">
+                <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">30<br></h1>
+                <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Countries served</h3>
+            </div>
+
+            <div class="abt-item">
+                <img src="phone.png" height="160px">
+                <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">3000+<br></h1>
+                <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Custom development projects</h3>
+            </div>
+
+            </center>
+
+        </div>
+
+
+        <section style="float: left;width: 50%;padding-top: 15px;">
+            <center><button class="btn">Request Quote</button></center>
+        </section>
+
+        <section style="float: right;width: 50%;padding-top: 15px ;">
+            <center><button class="btn">Company Profile</button></center>
+        </section>
+            
+        <section style="margin-top: 80px;"><a href="#creative-page"><img src="down_icon.png" class="scroll-nav"></a></section>
+
+</div>
+
+
+<div class="creative-page" id="creative-page">
+
+    <div class="bg-scroll-image">
+        <br><h1 style="color: white;font-family: sans-serif;font-weight: lighter; text-align: center;font-size: 50px;">Why Creative?</h1>
+
+        
+        <center>
+        <div class="border">
+           <br><br><h4>WE DESIGN FOR ALL DEVICES</h4> 
+        </div>
+
+        <div class="border">
+            <br><br><h4>OUR TEAM IS PROFESSIONAL</h4> 
+         </div>
+
+         <div class="border">
+            <h4>DIGITAL MARKETING SOLUTIONS THAT CONVERTS</h4> 
+         </div>
+
+         <div class="border">
+            <br><br><h4>WE DRINK A LOT OF COFFEE</h4> 
+         </div>
+
+         <br>
+
+         <div class="border">
+            <br><h4>WE PROVIDE TURNKEY SOLUTIONS</h4> 
+         </div>
+
+         <div class="border">
+            <br><h4>WE WORK TO EXCEL AND IMPROVE</h4> 
+         </div>
+
+         <div class="border">
+            <br><br><br><h4>SINCE 20 YEARS</h4> 
+         </div>
+        </center>
+
+        <section style="margin-top: 40px;"><a href="#services"><img src="down_icon.png" class="scroll-nav"></a></section>
+
+    </div>
+
+    
+
+
+</div>
+
+
+<div class="services" id="services">
+
+    <h1 style="font-family: sans-serif;font-weight: lighter;text-align: center;">Our Reputation of Competencies<br></h1>
+        <h3 style="font-family: sans-serif;font-weight: lighter;text-align: center;">One-Stop Turnkey Web and Software Solutions</h3> 
+
+
+        <div class="services-item-container" style="margin-top: 50px;">
+
+            <center>
+
+            <div class="services-item">
+                <img src="Services_icon/1.png" height="117px">
+                <h3>Intranet Development</h1>
+                <h3 style="font-weight: lighter;">Web Applications, Android app, IOS App, Windows App</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/2.png" height="100px">
+                <h3>Internet Marketing</h1>
+                <h3 style="font-weight: lighter;">SEO, PPC, Social Media marketing, Online reputation management</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/3.png" height="100px">
+                <h3>Web Design</h1>
+                <h3 style="font-weight: lighter;">MobileFirst, Responsive, Wordpress, Tailwind, Gatsby, Next.js website design</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/4.png" height="95px">
+                <h3>Enterprise Solutions</h1>
+                <h3 style="font-weight: lighter;">Integrations, SSAS software, CRM, ERP,<br>CAPEX, OPEX solutions</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/5.png" height="100px">
+                <h3>Bespoke Development</h1>
+                <h3 style="font-weight: lighter;">Asp.Net, React.js, Flutter, Python <br>Development, PHP</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/6.png" height="95px">
+                <h3>IT Staffing</h1>
+                <h3 style="font-weight: lighter;">Hire Resources permanent, on demand, man per hour, project basis</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/7.png" height="90px">
+                <h3>CMS</h1>
+                <h3 style="font-weight: lighter;">Content Management System - Web, Intranet, Extranet   </h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/8.png" height="105px">
+                <h3>E-Commerce</h1>
+                <h3 style="font-weight: lighter;">B2B, B2C, Bespoke E-Commerce website designing with SEO</h3>
+            </div>
+
+            <div class="services-item">
+                <img src="Services_icon/9.png" height="100px">
+                <h3>Email And Hosting</h1>
+                <h3 style="font-weight: lighter;">Premium Email, Servers, Corporate Mailing Solutions</h3>
+            </div>
+
+            </center>
+
+            <section style="margin-top: 40px;"><a href="#careers"><img src="down_icon.png" class="scroll-nav"></a></section>
+
+        </div>
+
+</div>
+
+
+<div class="careers" id="careers">
+
+    <div class="bg-scroll-image" style="background-image: url(bgimage2.png); min-height: 300px;">
+        <br><h1 style="color: white;font-family: sans-serif;font-weight: bolder; text-align: center;font-size: 35px;">Careers</h1>
+        <h3 style="color: white;font-family: sans-serif;font-weight: lighter; text-align: center;font-size: 20px;line-height: 25pt;">Are you looking for a growth oriented career? <br>Yes, You are at the Right place.</h3>
+
+        <section style="float: left;width: 50%;padding-top: 15px;">
+            <center><button class="btn" style="color: white;">Why Creative?</button></center>
+        </section>
+
+        <section style="float: right;width: 50%;padding-top: 15px ;">
+            <center><button class="btn" style="color: white;">Current Vaccancies</button></center>
+        </section>
+    </div>
+
+</div>
+
+
+<div class="contact" id="contact">
+
+    <div class="contact-container">
+
+        <a href="#intro"><img src="up_icon.png" class="scroll-nav" style="border: none;"></a>
+        
+        <section style="float: left;" id="section1">
+
+            <h4 id="about-btn" onclick="showAbout()">About Us ↓</h4>
+            <ul id="about" hidden="true">
+                <li>Profile</li>
+                <li>Our Team</li>
+                <li>Testimonials</li>
+                <li>Portfolio</li>
+                <li>Blog</li>
+            </ul>
+    
+    
+            <h4 id="vac-btn" onclick="showVac()">Current Vacancies ↓</h4>
+            <ul id="vac" hidden="true">
+                <li>Dotnet Developer</li>
+                <li>Fullstack Developer</li>
+                <li>Next.js Developer</li>
+                <li>HTML5 Web designer</li>
+                <li>React Native developer</li>
+            </ul>
+    
+    
+            <h4 id="blog-btn" onclick="showBlog()">Latest Blog Posts ↓</h4>
+            <ul id="blog" hidden="true">
+                <li>Employee Communication</li>
+                <li>Business communication tool</li>
+                <li>What is an Enterprise Intranet?</li>
+                <li>Intranet Security</li>
+            </ul>
+    
+        </section>
+    
+    
+        <section style="float: left;" id="section2">
+    
+            <h4 id="web-btn" onclick="showWeb()">Bespoke Web Development ↓</h4>
+            <ul id="web" hidden="true">
+                <li>ASP.net Development</li>
+                <li>Next.js Development</li>
+                <li>React Native App Development</li>
+                <li>Wordpress Web Development</li>
+            </ul>
+    
+    
+            <h4 id="it-btn" onclick="showIt()">IT services ↓</h4>
+            <ul id="it" hidden="true">
+                <li>ASP.net Development</li>
+                <li>Next.js Development</li>
+                <li>React Native App Development</li>
+                <li>Wordpress Web Development</li>
+            </ul>
+    
+    
+            <h4 id="sol-btn" onclick="showSol()">Our Solutions ↓</h4>
+            <ul id="sol" hidden="true">
+                <li>Employee Engagement Software</li>
+                <li>Social Intranet Software</li>
+                <li>Helpdesk Ticketing System</li>
+                <li>Learning & Development Software</li>
+                <li>E-commerce Software</li>
+                <li>Meeting Room Booking</li>
+            </ul>
+    
+        </section>
+
+        <section style="float: left;" id="section3">
+            <h4>RFQ</h4>
+            <h4 style="font-size: smaller;">Have a support question?</h4>
+            <button>Get in Touch</button>
+        </section>
+
+        <section id="section4">
+            <h4>Connect with us</h4>
+            <img src="Contact_icon/wp.png" height="30px" style="margin-left: 20px;">
+            <img src="Contact_icon/li.png" height="30px">
+            <img src="Contact_icon/yt.png" height="30px">
+            <img src="Contact_icon/insta.png" height="30px">
+        </section>
+
+    </div>
+
+    <h3 style="text-align: center;font-family: sans-serif; font-size: 18px; font-weight: lighter;margin-top: 45px;">© 2023 Creative Web Mall India Pvt. Ltd.</h3>
+    
+</div>
+
+<script>
+    let about=0;
+    let vac=0;
+    let blog=0;
+    let web=0;
+    let it=0;
+    let sol=0;
+
+    function showAbout(){
+        if(about==0){
+            document.getElementById("about-btn").innerHTML="About Us ↑";
+            document.getElementById("about").style.display="block";
+            about=1;
+        }
+        else{
+            document.getElementById("about-btn").innerHTML="About Us ↓";
+            document.getElementById("about").style.display="none";
+            about=0;
+        }
+        
+    }
+
+    function showVac(){
+        if(vac==0){
+            document.getElementById("vac-btn").innerHTML="Current Vacancies ↑";
+            document.getElementById("vac").style.display="block";
+            vac=1;
+        }
+        else{
+            document.getElementById("vac-btn").innerHTML="Current Vacancies ↓";
+            document.getElementById("vac").style.display="none";
+            vac=0;
+        }
+        
+    }
+
+    function showBlog(){
+        if(blog==0){
+            document.getElementById("blog-btn").innerHTML="Latest Blog Posts ↑";
+            document.getElementById("blog").style.display="block";
+            blog=1;
+        }
+        else{
+            document.getElementById("blog-btn").innerHTML="Latest Blog Posts ↓";
+            document.getElementById("blog").style.display="none";
+            blog=0;
+        }
+        
+    }
+
+    function showWeb(){
+        if(web==0){
+            document.getElementById("web-btn").innerHTML="Bespoke Web Development ↑";
+            document.getElementById("web").style.display="block";
+            web=1;
+        }
+        else{
+            document.getElementById("web-btn").innerHTML="Bespoke Web Development ↓";
+            document.getElementById("web").style.display="none";
+            web=0;
+        }
+        
+    }
+
+    function showIt(){
+        if(it==0){
+            document.getElementById("it-btn").innerHTML="IT services ↑";
+            document.getElementById("it").style.display="block";
+            it=1;
+        }
+        else{
+            document.getElementById("it-btn").innerHTML="IT services ↓";
+            document.getElementById("it").style.display="none";
+            it=0;
+        }
+        
+    }
+
+    function showSol(){
+        if(sol==0){
+            document.getElementById("sol-btn").innerHTML="Our Solutions ↑";
+            document.getElementById("sol").style.display="block";
+            sol=1;
+        }
+        else{
+            document.getElementById("sol-btn").innerHTML="Our Solutions ↓";
+            document.getElementById("sol").style.display="none";
+            sol=0;
+        }
+        
+    }
+
+</script>
+
+
+</html>
